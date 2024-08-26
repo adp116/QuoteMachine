@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Quote Generator</h1>
+        <button id="fetchQuotes">Fetch Quotes</button>
+        <input type="text" id="userInput" placeholder="Enter your text here">
+        <button id="generateQuote">Generate Quote</button>
+        <p id="result"></p>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
